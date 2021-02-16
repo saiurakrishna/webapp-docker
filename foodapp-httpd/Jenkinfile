@@ -2,7 +2,7 @@ pipeline {
     agent any
     stages {
         stage ('SCM checkout') {
-            git ''
+            git 'https://github.com/saiurakrishna/webapp-docker.git'
         }
                
         stage ('Build Docker Image') {
